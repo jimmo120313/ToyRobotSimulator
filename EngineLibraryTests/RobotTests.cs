@@ -94,10 +94,10 @@ namespace EngineLibrary.Tests
         {
             var robot = new Robot {Direction = Direction.NORTH, Position = new Position(1, 2)};
 
-            robot.NextPosition();
+            var updatedRobot = robot.NextPosition();
 
-            Assert.AreEqual(1, robot.Position.X);
-            Assert.AreEqual(3, robot.Position.Y);
+            Assert.AreEqual(1, updatedRobot.X);
+            Assert.AreEqual(3, updatedRobot.Y);
         }
     }
 }

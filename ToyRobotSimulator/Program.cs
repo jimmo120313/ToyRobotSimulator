@@ -16,7 +16,7 @@ namespace ToyRobotSimulator
 
             var cRobot = new Robot();
 
-            var tableTop = new TableTop {TableLength = 6, TableWidth = 6};
+            var tableTop = new TableTop {TableLength = 8, TableWidth = 8};
             var simulator = new Command(tableTop);
             while (true)
             {
